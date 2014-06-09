@@ -1,0 +1,237 @@
+#header {
+    h1 {
+        width: 400px
+    }
+}
+ 
+.medicineCabinet {
+    font-family: calibri;
+    margin: 5px 10px;
+    .body ul {
+        margin-left: 50px;
+    }
+
+    li {
+        &.drug {
+            background: url(../images/umslMedCab.png) 0 0 no-repeat;
+            display: inline-block;
+            height: 232px;
+            margin: 0 10px;
+            position: relative;
+            width: 144px;
+            &.expanded {
+                background-position: -150px 0;
+                margin-right: 133px;
+                width: 294px;
+                dl.drugDetails {
+                    display: block;
+                    float: left;
+                    padding: 0 0 0 5px
+                }
+
+                ul.options {
+                    display: block;
+                    margin: 0 ! important;
+                    padding: 0;
+                    position: absolute;
+                    right: -137px;
+                    top: 82px;
+                    width: auto
+                }
+            }
+
+            ul {
+                &.options {
+                    display: none;
+                    li {
+                        display: block;
+                        a {
+                            background: url(../images/umslMedCab.png) -448px -46px no-repeat;
+                            color: #666;
+                            display: block;
+                            font-size: 16px;
+                            height: 34px;
+                            padding: 12px 0 0;
+                            text-align: center;
+                            text-decoration: none;
+                            width: 137px;
+                        }
+                    }
+                }
+            }
+
+            dl {
+                display: block;
+                float: left;
+                margin: 100px 0 0 5px;
+                padding: 0 0 0 15px;
+                width: 115px;
+                &.drugDetails {
+                    display: none
+                }
+
+                dt {
+                    display: none
+                }
+
+                dd {
+                    font-size: 14px;
+                    width: 100%;
+                    &.drugName {
+                        font-weight: 800;
+                        font-size: 18px;
+                        color: #0066A4;
+                        width: 114px;
+                        overflow: hidden;
+                    }
+
+                    &.strength , &.form {
+                        display: inline;
+                        width: auto;
+                        color: #777;
+                        font-size: .90em;
+                        line-height: 1em;
+                    }
+                    &.refills{
+                        position:absolute;
+                        bottom: 40px;
+                    }
+                    &.refillDate {
+                        font-size: 12px;
+                        position: absolute;
+                        bottom: 20px;
+                    }
+
+                    &.renew {
+                        color: #c00;
+                        font-size: 14px;
+                        font-weight: 800;
+                        position: absolute;
+                        bottom: 20px;
+                    }
+
+                    &.qtyOnHand {
+                        @qtyWidth: 100px;
+                        position: absolute;
+                        top: 33px;
+                        left: 3px;
+                        width: @qtyWidth;
+                        text-align: right;
+                        padding-right: 3px;
+                        color: #fff;
+                        font-weight: bold;
+                        opacity: 0.5;
+                        &.percent_0 {
+                            background: #c00;
+                            width: @qtyWidth * 0px;
+                        }
+
+                        &.percent_10 {
+                            background: #c00;
+                            width: @qtyWidth * .10px;
+                        }
+
+                        &.percent_20 {
+                            background: #c00;
+                            width: @qtyWidth * .20px;
+                        }
+
+                        &.percent_30 {
+                            background: #c00;
+                            width: @qtyWidth * .30px;
+                        }
+
+                        &.percent_40 {
+                            background: #cc0;
+                            width: @qtyWidth * .40px;
+                        }
+
+                        &.percent_50 {
+                            background: #cc0;
+                            width: @qtyWidth * .50px;
+                        }
+
+                        &.percent_60 {
+                            background: #cc0;
+                            width: @qtyWidth * .60px;
+                        }
+
+                        &.percent_70 {
+                            background: #0c0;
+                            width: @qtyWidth * .70px;
+                        }
+
+                        &.percent_80 {
+                            background: #0c0;
+                            width: @qtyWidth * .80px;
+                        }
+
+                        &.percent_90 {
+                            background: #0c0;
+                            width: @qtyWidth * .90px;
+                        }
+
+                        &.percent_100 {
+                            background: #0c0;
+                            width: @qtyWidth * 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rating {
+    bottom: 25px;
+    left: 149px;
+    margin: 0 ! important;
+    padding: 0;
+    position: absolute;
+    li {
+        display: inline-block;
+        a {
+            background: url(./images/umslMedCab.png) -667px -334px no-repeat;
+            display: inline-block;
+            height: 24px;
+            overflow: hidden;
+            text-indent: -3000em;
+            width: 24px;
+            &.on {
+                background-position: -715px -334px;
+            }
+
+            &.selected {
+                background-position: -739px -334px
+            }
+        }
+    }
+}
+
+.reminder .header {
+    display: none
+}
+
+.ui-sortable-placeholder {
+    border: 1px dotted #000;
+    height: 232px ! important;
+    visibility: visible ! important
+}
+
+.Fluoxetine , .Hydrochlorothiazide , .Amoxapine {
+    background: url(../images/umslMedCab.png) -615px 0 no-repeat;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    bottom: -25px;
+    left: 70px;
+}
+
+.Fluoxetine {
+    background-position: -615px -50px;
+}
+
+.Amoxapine {
+    background-position: -615px -100px;
+}
+

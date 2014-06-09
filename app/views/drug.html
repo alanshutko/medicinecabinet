@@ -1,0 +1,21 @@
+<li class="drug" ng-repeat="drug in drugs" data-rx="{{drug.rxNumber}}" ng-click="toggle(drug)" ng-transclude>
+    <dl>
+        <dt>Drug</dt>
+        <dd class="drugName">{{drug.name}}</dd>
+        <dt>Strength</dt>
+        <dd class="strength">{{drug.dosage}}</dd>
+        <dt>Form</dt>
+        <dd class="form">{{drug.form}}</dd>
+        <ng-include src="'views/fillsRemaining.html'" ng-if="drug.refillsRemaining > 0"></ng-include>
+        <ng-include src="'views/renewNow.html'" ng-if="drug.refillsRemaining == 0"></ng-include>
+    </dl>
+    <dl class="drugDetails">
+        <dt>Directions</dt>
+        <dd>{{drug.directions}}</dd>
+        <!--<dt>Rating</dt>
+                    <dd>
+                        call .DrugRating param drug: $drug / /call
+                    </dd>-->
+    </dl>
+    <div class="{{drug.name}}"></div>
+</li>

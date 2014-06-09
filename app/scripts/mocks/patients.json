@@ -1,0 +1,64 @@
+{
+  "patients": [
+    {
+      "name": {
+        "first": "Robert",
+        "last": "Nyles"
+      },
+      "phoneNumber": "3145550928",
+      "drugs": [
+        {
+          "rxNumber": "111222333",
+          "ndc": "1234567",
+          "name": "Prilosec",
+          "dosage": "60mg",
+          "form": "capsule",
+          "quantity": "90",
+          "daysSupply": "90",
+          "quantityOnHand": "10",
+          "refillsRemaining": "0",
+          "lastRefillDate": "2014-04-20",
+          "nextRefillDate": "2014-07-24",
+          "renewalRequired": "true",
+          "directions": "Take 1 capsule by mouth daily.",
+          "demographicRating": "3",
+          "personalRating": "3"
+        },
+        {
+          "rxNumber": "333111222",
+          "ndc": "1234568",
+          "name": "Ascomp",
+          "dosage": "50mg",
+          "form": "capsule",
+          "quantity": "90",
+          "daysSupply": "90",
+          "quantityOnHand": "50",
+          "refillsRemaining": "0",
+          "lastRefillDate": "2014-04-20",
+          "nextRefillDate": "2014-07-22",
+          "renewalRequired": "true",
+          "directions": "Take 1 capsule by mouth as needed for pain.",
+          "demographicRating": "3",
+          "personalRating": "3"
+        },
+        {
+          "rxNumber": "222111333",
+          "ndc": "1234569",
+          "name": "Hydroxyzine HCL",
+          "dosage": "25mg",
+          "form": "capsule",
+          "quantity": "90",
+          "daysSupply": "90",
+          "quantityOnHand": "70",
+          "refillsRemaining": "3",
+          "lastRefillDate": "2014-05-01",
+          "nextRefillDate": "2014-08-01",
+          "renewalRequired": "false",
+          "directions": "Take 1 capsule by mouth as needed for itching.",
+          "demographicRating": "3",
+          "personalRating": "3"
+        }
+      ]
+    }
+  ]
+}
