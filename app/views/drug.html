@@ -1,4 +1,4 @@
-<li class="drug" ng-repeat="drug in drugs" data-rx="{{drug.rxNumber}}" ng-click="toggle(drug)" ng-transclude>
+<my-directive><li class="drug" ng-repeat="drug in drugs" data-rx="{{drug.rxNumber}}" ng-click="toggle(drug)" ng-transclude>
     <dl>
         <dt>Drug</dt>
         <dd class="drugName">{{drug.name}}</dd>
@@ -19,3 +19,4 @@
     </dl>
     <div class="{{drug.name}}"></div>
 </li>
+</my-directive>
